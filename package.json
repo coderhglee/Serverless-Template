@@ -1,0 +1,29 @@
+{
+  "name": "chosun-serverless",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using ecma script",
+  "scripts": {
+    "test": "jest --verbose",
+    "clean": "rm -rf ./dist/**",
+    "build": "babel ./src --out-dir ./dist --source-maps",
+    "watch": "babel -w ./src --out-dir ./dist --source-maps",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "esm": "^3.2.25",
+    "jest": "^25.1.0",
+    "serverless": "=1.68.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.41.6",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
