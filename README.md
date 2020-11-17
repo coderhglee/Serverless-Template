@@ -102,5 +102,3 @@ $ npm run watch
 ```
 SLS_DEBUG=* npx sls deploy --stage <<STAGE NAME>> --region <<AWS REGION>> --org_name <<ARC ORG>> --verbose
 ```
-
-_Note: Once your print lambdas are deployed, you will need to configure the Websked webhook and Composer Settings for print integration to use the API Gateway URL created for the send to print lambdas._
